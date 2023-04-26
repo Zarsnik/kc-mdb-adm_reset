@@ -10,7 +10,7 @@ delete from user_entity where id = '<user-id>';
 ```
 
 
-Unclean method
+Unclean method :
 
 ```
 mysql -u root -p
