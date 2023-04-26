@@ -2,6 +2,16 @@
 Reset admin Keycloak account in mariadb server
 
 
+``` 
+select * from user_entity
+delete from credential where user_id = '<user-id>';
+delete from user_role_mapping where user_id = '<user-id>';
+delete from user_entity where id = '<user-id>';
+```
+
+
+Unclean method
+
 ```
 mysql -u root -p
 USE keycloak;
